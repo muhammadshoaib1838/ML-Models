@@ -12,7 +12,6 @@ import pickle
 import os
 import time
 from PIL import Image, ImageOps
-
 # ── Page config (MUST be first Streamlit call) ─────────────────────
 st.set_page_config(
     page_title="Animal Classifier AI",
