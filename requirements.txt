@@ -1,5 +1,5 @@
-streamlit
+tensorflow
+scikit-learn
 numpy
 pillow
-scikit-learn
-joblib
+streamlit
