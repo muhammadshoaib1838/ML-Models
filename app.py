@@ -23,10 +23,8 @@ st.set_page_config(
 # ── Lazy-import heavy libraries so Streamlit Cloud stays responsive ─
 @st.cache_resource(show_spinner=False)
 def load_tensorflow():
-    """Load TensorFlow/Keras only once and cache it."""
     import tensorflow as tf
-    build_feature_extractor()
-extract_features()
+    from tensorflow.keras.applications import MobileNetV2
     from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
     from tensorflow.keras.models import Model
     return tf, MobileNetV2, preprocess_input, Model
