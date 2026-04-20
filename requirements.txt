@@ -1,6 +1,5 @@
-python -m pip install --upgrade pip
-tensorflow
-scikit-learn
+streamlit
 numpy
 pillow
-streamlit
+scikit-learn
+joblib
