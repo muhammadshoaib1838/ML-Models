@@ -25,7 +25,8 @@ st.set_page_config(
 def load_tensorflow():
     """Load TensorFlow/Keras only once and cache it."""
     import tensorflow as tf
-    from tensorflow.keras.applications import MobileNetV2
+    build_feature_extractor()
+extract_features()
     from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
     from tensorflow.keras.models import Model
     return tf, MobileNetV2, preprocess_input, Model
